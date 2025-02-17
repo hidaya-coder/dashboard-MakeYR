@@ -73,7 +73,7 @@ const demoData = {
     yearly: Array(12).fill(null).map((_, i) => 1500 + (i * 200))
 };
 
-class VisitorChart { // Classe en PascalCase
+class VisitorChart { // Classe 
     constructor(containerId) {
         this.container = document.getElementById(containerId);
         this.canvas = document.createElement('canvas');
