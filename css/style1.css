@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root
+{
+    --Primarycolor:#14A800;
+    --Secondarycolor:linear-gradient(to top,#14A800 0%, #7bd170 100%);
+    --tertiarycolor:linear-gradient(to right,#14A800 0%,#96D88E 100% );
+    --lightcolor:#F3FAF2;
+    --titre-color:#333333;
+    --text-color:#CCCCCC;
+    --text-aside-color:#fff;
+    --font-text:"Poppins", serif;
+    --taille10:1.64vmin;
+    --taille15:2.46vmin;
+    --taille13:2.13525vmin;
+    --taille17:2.79vmin;
+    --taille18:3.08vmin;
+    --taille23:3.77vmin;
+    --taille28:4.20vmin;
+    --taille35:5.74875vmin;
+    --taille40:6.57vmin;
+    --taille50:8.22vmin;
+    --taille60:10.125vmin;
+    --taille70:12.875vmin;
+    --taille100:16.425vmin;
+    --taille150:24.67vmin;
+    --taille250:41.0625vmin;
+    --taille350:57.4875;
+    --border-radius-container:18px;
+
+}
+
+*
+{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+
+}
+
+body{
+    position:relative;
+    font-family: var(--font-text);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    gap: 20px;
+    height: 100vh;
+}
+
+h1,h2,h3,h4{
+    line-height: 30px;
+    text-align: left;
+}
+
+h1
+{
+    color: var(--text-aside-color);
+    font-weight:700 ;
+    font-size: var(--taille28);
+}
+
+h2
+{
+    color: var(--titre-color);
+    font-weight:500 ;
+    font-size:var(--taille23);
+}
+
+h3
+{
+    color: var(--titre-color);
+    font-weight:500;
+    font-size: var(--taille18);
+}
+
+h4
+{
+    color: var(--titre-color);
+    font-weight:500;
+    font-size: var(--taille13);
+    text-align: center;
+}
+
+h5
+{
+    color: var(--text-color);
+    font-weight:300;
+    font-size: var(--taille13);
+}
+
+
+
+aside
+{
+    color: var(--text-aside-color);
+    width: 22%;
+    height: 100%;
+    background:var(--Secondarycolor);
+    border-radius: var(--border-radius-container);
+    display: flex;
+    padding: var(--taille40) var(--taille23);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar
+{
+    padding: var(--taille50);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:center ;
+    gap: 110px;
+}
+
+.navbar nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    font-weight: 400;
+    gap: 34px;
+}
+
+.navbar nav .link
+{
+    color: var(--text-aside-color);
+    font-size: var(--taille15);
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.navbar nav .link:hover
+{
+    color: var(--text-aside-color);
+    font-size: var(--taille17);
+    font-weight: 700;
+}
+
+#userguide
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height:var(--taille350);
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: var(--taille23) var(--taille15);
+    border-radius: var(--border-radius-container);
+    flex-wrap: wrap;
+    gap: 20px ;
+    cursor: pointer;
+    transition:transform 0.9s linear ;
+
+}
+
+#userguide:hover
+{
+    transform: scale(1.05);
+    background-color:rgba(255, 255, 255, 0.3);
+}
+#userguide .user-guide-text
+{
+    text-align: left;
+    gap: 8px;
+}
+
+#userguide .user-guide-text .titre
+{
+    font-size: var(--taille13);
+    font-weight: 400;
+}
+#userguide .user-guide-text .soustitre
+{
+    font-size: var(--taille10);
+    font-weight: 300; 
+}
+
+#userguide .imagebook
+{
+    width:var(--taille40) ;
+    height: var(--taille40);
+}
+main
+{
+    width: 78%;
+    height: 100%;
+    background-color: #fff;
+    padding: 25px 15px;
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: left;
+    position: relative;
+    
+}
+
+header
+{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    flex:1 1 ;
+    width: 100%;
+    height: 10%;
+}
+
+.entete
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    gap: 5px;
+    height: 100%;
+}
+.admin
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap:40px;
+    padding: 10px;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.p1
+{
+    font-size: var(--taille15);
+    font-weight: 600;
+}
+
+.icon1
+{
+    width: var(--taille35);
+    height:var(--taille35);
+}
+
+.icon3
+{
+    width: var(--taille23);
+    height: var(--taille23);
+}
+
+.icon2
+{
+    width: var(--taille13);
+    height: var(--taille13);
+}
+
+.static
+{
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height:30%;
+}
+
+.box
+{
+    flex: 1 1;
+    flex-basis: 250px;
+    background-color: var(--lightcolor);
+    height: 100%;
+    width:30%;
+    display: flex;
+    align-items: center;
+    padding:40px;
+    justify-content: space-between;
+    border-radius: var(--border-radius-container);
+    gap: var(--taille50);
+
+}
+
+.box .col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 1px;
+}
+
+
+.nombre
+{
+    font-size: var(--taille28);
+    font-weight: 400;
+    color: var(--Primarycolor);
+}
+
+.visitorgrowth
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 35px;
+    width: 100%;
+    height:60vh;
+}
+
+.visitorgrowth .allInfo
+{
+    display: flex;
+    flex: 1 1;
+    flex-basis: 250px;
+    flex-direction: column;
+    gap: 37px;
+    justify-content: center;
+    align-items: center;
+    width:66% ;
+    height: 100%;
+}
+.visitorgrowth .allInfo .allInfohead
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 20%;
+}
+
+.visitorgrowth .allInfo .allInfohead .typeclassification
+{
+    display: flex;
+    flex-direction: row;
+   gap: 20px;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 9px;
+   color: var(--titre-color);
+   font-size: var(--taille13);
+   font-weight: 400;
+   background-color: var(--lightcolor);
+   border-radius: var(--border-radius-container);
+   cursor: pointer;
+   transition: transform 1s ease;
+   width: auto;
+
+}
+.visitorgrowth .allInfo .allInfohead .typeclassification  li
+{
+    padding: 7px 24px;
+    transition: all 0s ease;
+}
+
+.visitorgrowth .allInfo .allInfohead .typeclassification li:hover {
+    background: var(--Secondarycolor); 
+    border-radius: var(--border-radius-container);
+    transform: translateX(-2px); 
+    color: var(--lightcolor);
+}
+
+.visitorgrowth .LatesCreatedResume
+{
+    display: flex;    
+    flex-direction: column;
+    gap: 35px;
+    justify-content: top;
+    align-items: top;
+    width:31% ;
+    height: 100%;
+
+}
+
+.visitorgrowth .LatesCreatedResume .header
+{
+    width: 100%;
+    padding: 14px;
+    background-color: var(--lightcolor);
+    text-align: center;
+    justify-content: center;
+    border-radius: var(--border-radius-container);
+}
+
+.visitorgrowth .LatesCreatedResume  .container
+{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: #14A800;
+
+}
+
+.visitorgrowth .allInfo #chart-container {
+    width: 100%;
+    padding: 0px;
+    height: 70%;
+}
+
+#visitorChart {
+    width: 100% ;
+    height: 100%;
+}
+
+
+@media (max-width: 1240px) {
+    body
+    {
+        gap:0;
+        padding: 20px 40px;
+        height: 100%;
+    }
+    aside
+    {
+        visibility: hidden;
+        width:0%;
+        padding: 0;
+    }
+    main
+    {
+        width: 100%;
+        gap: 30px;
+        padding: 10px 5px;
+        height: 100%;
+    }
+
+    .entete
+    {
+    gap: 0px;
+    }
+    .admin
+    {
+        gap: 20px;
+    }
+    
+    .icon1
+    {
+    width: 30px;
+    height: 30px;
+    }
+    .static
+    {
+    gap: 30px;
+    width: 100%;
+    height: 15%;
+    }
+    .box{
+        gap: 25px;
+    }
+    .visitorgrowth .LatesCreatedResume
+    {
+        flex: 1 1;
+        flex-basis: 250px;
+    }
+}
